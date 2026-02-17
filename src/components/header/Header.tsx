@@ -4,7 +4,7 @@ import { ContactBtn } from "../others/ContactBtn";
 import { Menu } from "lucide-react";
 
 interface HeaderProps {
-  setOpen: () => void;
+  setOpen: (value: boolean) => void;
 }
 
 const Header: React.FC<HeaderProps> = ({ setOpen }) => {

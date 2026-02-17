@@ -1,4 +1,3 @@
-import React from "react";
 import myImage from "../../assets/myimage.webp";
 import { PixelImage } from "../ui/PixelImage";
 import { TypingAnimation } from "../ui/Typing-animation";

@@ -79,7 +79,7 @@ const ContactContainer = () => {
       </p>
 
       <MagicCard className="rounded-xl">
-        <div className="lg:p-16 p-10 w-112.5 lg:w-full">
+        <div className="lg:p-8 p-5 sm:w-112.5 lg:w-full">
           <form ref={formRef} onSubmit={submitHandler}>
             <div className="flex gap-2 lg:flex-row flex-col">
               <input

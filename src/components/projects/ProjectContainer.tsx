@@ -81,7 +81,7 @@ export function ProjectContainer() {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover transition duration-500 hover:scale-105"
+                className="w-full h-52 object-cover transition duration-500 hover:scale-105"
               />
             </Lens>
           </div>

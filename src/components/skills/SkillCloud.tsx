@@ -36,7 +36,7 @@ export function SkillCloud() {
   );
 
   return (
-    <div className="relative flex items-center justify-center overflow-hidden">
+    <div className="relative flex items-center sm:ml-10 justify-center overflow-hidden">
       <IconCloud images={images} />
     </div>
   );

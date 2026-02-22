@@ -69,7 +69,7 @@ const Home = () => {
         }}
         by="character"
       >
-        Frontend Web Developer Intern
+        Frontend Web Developer
       </TextAnimate>
       <TextAnimate
         animation="blurInUp"

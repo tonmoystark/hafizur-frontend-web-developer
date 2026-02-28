@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div id="home" className="flex flex-col pt-30 pb-20 justify-center px-10 lg:px-20 items-center">
       <div className="w-full flex justify-center items-center">
-        <PixelImage src={myImage} grid="6x4" />
+        <PixelImage src={myImage}  grid="6x4" />
       </div>
       <h1 className="lg:text-xl text-md font-semibold text-slate-400">
         Hi I am{" "}

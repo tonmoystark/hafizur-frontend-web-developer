@@ -82,6 +82,7 @@ export function ProjectContainer() {
                 src={project.image}
                 alt={project.title}
                 className="w-full h-52 object-cover transition duration-500 hover:scale-105"
+                loading="lazy"
               />
             </Lens>
           </div>

@@ -10,7 +10,8 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ setOpen }) => {
   return (
     <div
-      className="flex justify-between fixed z-50 w-full top-0 items-center sm:px-10 md:px-14 lg:px-20 px-5 py-3 bg-linear-to-r from-slate-950 via-blue-900 to-slate-900 border-b border-white/10 backdrop-blur-md"
+      className="flex justify-between fixed z-50 w-full top-0 items-center sm:px-10 md:px-14 lg:px-20 px-5 py-3 bg-slate-900/70 
+backdrop-blur-lg  border-b border-white/10 "
     >
       <HeadName />
       <MiddleNav />

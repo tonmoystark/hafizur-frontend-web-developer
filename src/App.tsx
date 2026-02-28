@@ -12,7 +12,7 @@ const App = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-slate-950 via-blue-950 to-slate-900 text-white">
+    <div className="min-h-screen scroll-smooth bg-linear-to-br from-slate-950 via-blue-950 to-slate-900 text-white">
       {!open && <Header setOpen={() => setOpen(true)} />}
       {!open && <Home />}
       {!open && <AboutContainer />}

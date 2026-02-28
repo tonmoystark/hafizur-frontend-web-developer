@@ -68,7 +68,7 @@ export function ProjectContainer() {
       {ProjectData.map((project, index) => (
         <div
           key={index}
-          className="w-full sm:w-[48%] lg:w-[30%] bg-zinc-900 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300"
+          className="w-full sm:w-[48%] lg:w-[30%] bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300"
         >
           {/* Image Section */}
           <div className="relative w-full overflow-hidden">
@@ -100,7 +100,7 @@ export function ProjectContainer() {
               {project.stack.map((tech, i) => (
                 <span
                   key={i}
-                  className="px-3 py-1 text-xs bg-zinc-800 text-gray-300 rounded-full"
+                  className="bg-blue-500/10 text-sky-400 border border-blue-500/20 px-3 py-1 rounded-full text-sm"
                 >
                   {tech}
                 </span>
@@ -110,18 +110,16 @@ export function ProjectContainer() {
             {/* Buttons */}
             <div className="flex gap-3 pt-4">
               <a href={project.liveLink} target="_blank">
-                <button className="relative hover:cursor-pointer flex px-5 py-2 text-sm font-medium text-white rounded-lg overflow-hidden group">
-                  <span className="absolute inset-0 bg-linear-to-r from-purple-500 via-pink-500 to-orange-400 transition-all duration-500 group-hover:scale-110"></span>
-                  <span className="absolute inset-0 bg-linear-to-r from-purple-500 via-pink-500 to-orange-400 blur-xl opacity-40 group-hover:opacity-70 transition duration-500"></span>
-                  <span className="relative z-10 text-md">Live</span>
+                <button className="bg-blue-500 flex items-center text-white px-4 py-2 rounded-lg font-medium transition hover:bg-blue-400 active:scale-95 shadow-lg shadow-blue-500/20">
+                  <span>Live</span>
                   <ExternalLink className="ml-2 z-10" size={20} />
                 </button>
               </a>
 
               {/* Code Button (Glass Effect) */}
-              <button className="px-5 py-2 text-sm flex font-medium text-white border border-white/20 backdrop-blur-md bg-white/5 rounded-lg transition-all duration-300 hover:bg-white/10 hover:scale-105 active:scale-95">
-                Code
-                <Code2Icon className="ml-2" />
+              <button className="border flex items-center border-slate-600 text-slate-200 px-4 py-2 rounded-lg font-medium transition hover:bg-slate-700/60 active:scale-95">
+                <span>Code</span>
+                <Code2Icon className="ml-2" size={20} />
               </button>
             </div>
           </div>

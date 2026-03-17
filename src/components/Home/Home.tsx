@@ -55,9 +55,9 @@ useEffect(() => {
   {text.toUpperCase()}
   <span className="animate-pulse">|</span>
 </h2>
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+              <h1 className="text-3xl md:text-6xl font-bold leading-tight">
           Hi, I'm{" "}
-          <span className="bg-linear-to-r font-heading text-4xl md:text-6xl font-semibold tracking-tight from-emerald-400 via-emerald-300 to-cyan-400 bg-clip-text text-transparent">
+          <span className="bg-linear-to-r font-heading text-3xl md:text-6xl font-semibold tracking-tight from-emerald-400 via-emerald-300 to-cyan-400 bg-clip-text text-transparent">
             Hafizur Rahman
           </span>
         </h1>

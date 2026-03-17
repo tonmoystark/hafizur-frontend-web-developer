@@ -4,7 +4,7 @@ const LeftSide = () => {
       {/* About */}
 
       <div>
-        <h2 className="text-3xl text-center sm:text-left hidden sm:block font-semibold mb-4">
+        <h2 className="text-3xl text-center sm:text-left font-semibold mb-4">
           About Me
         </h2>
         <p className="text-gray-400 sm:w-[80%] w-full leading-relaxed">

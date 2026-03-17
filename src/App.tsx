@@ -1,12 +1,15 @@
 import { useState } from "react";
 import AboutContainer from "./components/about/AboutContainer";
 import ContactContainer from "./components/Contact/ContactContainer";
+
 import Header from "./components/header/Header";
 import Home from "./components/Home/Home";
+
 import Projects from "./components/projects/Projects";
-import SkillContainer from "./components/skills/SkillContainer";
+
 import SideBarContainer from "./components/sidebar/SideBarContainer";
 import Footer from "./components/footer/Footer";
+import SkillContainer from "./components/skills/SkillContainer";
 
 const App = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -16,6 +19,7 @@ const App = () => {
       {!open && <Header setOpen={() => setOpen(true)} />}
       {!open && <Home />}
       {!open && <AboutContainer />}
+      {/* {!open && <SkillContainer />} */}
       {!open && <SkillContainer />}
       {!open && <Projects />}
       {!open && <ContactContainer />}

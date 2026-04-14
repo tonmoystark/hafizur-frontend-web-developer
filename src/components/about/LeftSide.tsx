@@ -27,7 +27,7 @@ const LeftSide = () => {
       </div>
 
       {/* Education */}
-      <div>
+      <div className="my-5">
         <h3 className="text-xl font-semibold mb-2">Education</h3>
         <div className="text-gray-400">
           <p className="font-medium text-white">Bachelor of Arts (BA)</p>

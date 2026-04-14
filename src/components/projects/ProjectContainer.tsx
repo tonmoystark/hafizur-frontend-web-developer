@@ -5,6 +5,7 @@ import pro3 from "../../assets/pro3.webp";
 import pro4 from "../../assets/pro4.webp";
 import pro5 from "../../assets/pro5.webp";
 import { Code2Icon, ExternalLink } from "lucide-react";
+
 interface ProjectContainerProps {
   image: string;
   title: string;
@@ -13,12 +14,24 @@ interface ProjectContainerProps {
   liveLink: string;
   githubLink: string;
 }
+
 const ProjectData: ProjectContainerProps[] = [
   {
     image: pro1,
     title: "Task Flow Management App",
-    description:
-      "A task management system with role-based dashboards where admins assign tasks and employees track their task status using Context API and LocalStorage.",
+    description: `
+A task management system with role-based dashboards where admins assign tasks and employees track progress.
+
+<p class="mt-2 text-xs text-gray-300">
+🔑 <strong>Demo Credentials:</strong><br/>
+Admin → username: <span class="text-white">admin</span> | password: <span class="text-white">admin</span><br/>
+Employee → email: <span class="text-white">tonmoy@company.com</span> | password: <span class="text-white">123</span>
+</p>
+
+<span class="inline-block mt-2 px-2 py-1 text-[10px] bg-green-500/20 text-green-400 rounded">
+  Demo Available
+</span>
+`,
     stack: ["React", "TailwindCSS", "Context API"],
     liveLink: "https://task-flow-employee-task-manager.vercel.app/",
     githubLink:
@@ -27,8 +40,19 @@ const ProjectData: ProjectContainerProps[] = [
   {
     image: pro2,
     title: "Mood Tracking App",
-    description:
-      "A simple and calming interface that helps users log daily moods and sleep patterns, encouraging self-reflection.",
+    description: `
+A calming interface to log daily moods and sleep patterns for better self-reflection.
+
+<p class="mt-2 text-xs text-gray-300">
+🔑 <strong>Demo Login:</strong><br/>
+Email: <span class="text-white">tonmoy.a009@gmail.com</span><br/>
+Password: <span class="text-white">Tonmoy123@</span>
+</p>
+
+<span class="inline-block mt-2 px-2 py-1 text-[10px] bg-green-500/20 text-green-400 rounded">
+  Demo Available
+</span>
+`,
     stack: ["HTML", "TailwindCSS", "JavaScript"],
     liveLink: "https://mood-tracking-ui.vercel.app/",
     githubLink: "https://github.com/tonmoystark/mood-tracking-ui",
@@ -36,8 +60,19 @@ const ProjectData: ProjectContainerProps[] = [
   {
     image: pro3,
     title: "Bookmark Manager App",
-    description:
-      "An intuitive bookmark manager that allows users to organize, search, and categorize saved links.",
+    description: `
+An intuitive bookmark manager to organize, search, and categorize saved links.
+
+<p class="mt-2 text-xs text-gray-300">
+🔑 <strong>Demo Login:</strong><br/>
+Email: <span class="text-white">tonmoy.a009@gmail.com</span><br/>
+Password: <span class="text-white">Tonmoy123</span>
+</p>
+
+<span class="inline-block mt-2 px-2 py-1 text-[10px] bg-green-500/20 text-green-400 rounded">
+  Demo Available
+</span>
+`,
     stack: ["HTML", "TailwindCSS", "JavaScript"],
     liveLink: "https://bookmark-manager-weld.vercel.app/",
     githubLink: "https://github.com/tonmoystark/bookmark-manager",
@@ -55,7 +90,7 @@ const ProjectData: ProjectContainerProps[] = [
     image: pro5,
     title: "Quiz App",
     description:
-      "An interactive quiz application with instant feedback and score display..",
+      "An interactive quiz application with instant feedback and score display.",
     stack: ["HTML", "CSS", "JavaScript"],
     liveLink: "https://tonmoystark.github.io/quiz-app/",
     githubLink: "https://github.com/tonmoystark/quiz-app",
@@ -93,7 +128,11 @@ export function ProjectContainer() {
               {project.title}
             </h2>
 
-            <p className="text-gray-400 text-sm">{project.description}</p>
+            {/* Description with HTML render */}
+            <div
+              className="text-gray-400 text-sm leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: project.description }}
+            ></div>
 
             {/* Stack */}
             <div className="flex flex-wrap gap-2 pt-2">
@@ -116,11 +155,12 @@ export function ProjectContainer() {
                 </button>
               </a>
 
-              {/* Code Button (Glass Effect) */}
-              <button className="border flex items-center border-slate-600 text-slate-200 px-4 py-2 rounded-lg font-medium transition hover:bg-slate-700/60 active:scale-95">
-                <span>Code</span>
-                <Code2Icon className="ml-2" size={20} />
-              </button>
+              <a href={project.githubLink} target="_blank">
+                <button className="border flex items-center border-slate-600 text-slate-200 px-4 py-2 rounded-lg font-medium transition hover:bg-slate-700/60 active:scale-95">
+                  <span>Code</span>
+                  <Code2Icon className="ml-2" size={20} />
+                </button>
+              </a>
             </div>
           </div>
         </div>

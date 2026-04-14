@@ -16,7 +16,9 @@ backdrop-blur-lg  border-b border-white/10 "
       <HeadName />
       <MiddleNav />
       <div className="flex gap-5 sm:gap-2 items-center">
-        <ContactBtn />
+        <div  className="invisible">
+          <ContactBtn />
+        </div>
         <Menu onClick={() => setOpen(true)} className="text-white sm:hidden" />
       </div>
     </div>
